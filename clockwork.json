@@ -1,7 +1,9 @@
-"name": "Unblocked Games from NXX99",
-"desc": "An unblocked games website developed by NXX99 using raw HTML, CSS, and JavaScript",
-"url": "https://nxx99.github.io/Unblocked-Games-from-NXX99",
-"id": "ugfn",
-"encodedUrl": "no",
-"icon": "https://nxx99.github.io/Unblocked-Games-from-NXX99/favicon.png",
-"version": "v1.0.0",
+{
+  "name": "Unblocked Games from NXX99",
+  "desc": "An unblocked games website developed by NXX99 using raw HTML, CSS, and JavaScript",
+  "url": "https://nxx99.github.io/Unblocked-Games-from-NXX99",
+  "id": "ugfn",
+  "encodedUrl": "no",
+  "icon": "https://nxx99.github.io/Unblocked-Games-from-NXX99/favicon.png",
+  "version": "v1.0.0",
+}
