@@ -1,4 +1,5 @@
 *{
+  background-color:black;
   text-align:center;
   font-family: sans-serif;
   animation-name: load;
@@ -12,22 +13,73 @@
   }
 }
 button{
-  border-style: outset;
-  border-width: 10px;
-  border-radius: 20px;
-  transition-property: border-width;
-  transition-duration: 0.5s;
+    background-color: black; /* Blue */
+  border: none;
+  border-radius:100px;
+    border-color:white;
+  border-style: solid;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition:0.3s;
+  cursor: pointer;
+  
+
 }
-button:hover{
-  border-style: ridge;
-  border-width: 20px;
+button:hover {
+  height:80px;
+    width:140px;
+  transition:0.3s;
 }
-button:active{
-  border-style: inset;
-  border-radius: 20px;
+.image {
+   border-radius: 100px;
+  width: 40%;
+  transition:0.3s;
+    height:120%; 
 }
+.image:hover {
+  width:80%;
+  height:240%;
+  border-radius: 100px;
+  
+}
+#main {
+  .flex-container {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+}
+.button {
+  border-radius:0px;
+  background-color:black;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/Transparent_square.svg");
+  height: 100px;
+  border-style: none;
+  width: 300px;
+  border-color:dodgerblue;
+  border-width:100px;
+  
+
+  
+}
+
+.button:hover {
+  height:100px;
+  width:300px;
+}
+
 h1,h2,h3{
   font-family: sans-serif;
+  color:white;
 }
 li{
   text-align: center;
@@ -42,4 +94,4 @@ li{
   font-size: 0px;
   display:contents;
 }
-/*CSS revision 1957*/
+/*CSS revision 69z69*/
