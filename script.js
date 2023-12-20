@@ -1,5 +1,6 @@
 console.log("script revision 4032")
-var ttog = document.getElementById("DTog")
+const style = document.getElementById("style")
+var cookie = document.cookie
 var uagent = navigator.userAgent
 var usragntdisp = document.getElementById("usragent")
 usragntdisp.innerHTML = uagent
@@ -18,17 +19,20 @@ function antifork(){
   }
 }
 
-/*function DTog(){
-  if(ttog.checked == true){
-    document.cookie = "dmode; max-age=3153600"
-  } else {
-    document.cookie = "lmode; max-age=3153600"
+function switchTheme(){
+  if (cookie.contains("oldcss")){
+    cookie = "newcss, expires=Tue, 31 Dec 2999 11:59:59 UTC"
   }
-  if(document.cookie=="light"){
-     document.style-src = "style.css"
-  }else{
-     document.style-src="dark.css"
+  if (cookie.contains("newcss")){
+    cookie = "oldcss, expires=Tue, 31 Dec 2999 11:59:59 UTC"
   }
 }
-window.setInterval(DTog, 100)
-*/
+function checkTheme(){
+  if (cookie.contains("oldcss")){
+    style.href = "old.css"
+  }
+  if (cookie.contains("new")){
+    style.href = "style.css"
+  }
+}
+checkTheme()
